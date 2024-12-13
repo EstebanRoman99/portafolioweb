@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins";
+  scroll-behavior: smooth;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px; /* Más delgado para un diseño limpio */
+}
+
+/* Scrollbar track (background) */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.5); /* Fondo negro semi-transparente */
+  border-radius: 10px; /* Bordes redondeados */
+}
+
+/* Scrollbar thumb (handle) */
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 0, 255, 0.8); /* Rosa con opacidad para suavidad */
+  border-radius: 10px; /* Bordes redondeados */
+  border: 2px solid rgba(0, 0, 0, 0.5); /* Borde negro para contraste */
+}
+
+/* Scrollbar thumb hover effect */
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 255, 0, 0.8); /* Cambia a verde en hover */
+}
+
+/* Configuración para ajustar el desplazamiento en las secciones */
+#home,
+#about,
+#projects,
+#contact {
+  scroll-margin-top: 84px; /* Ajusta esto al tamaño del navbar */
+}
