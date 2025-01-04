@@ -12,12 +12,12 @@ i18n.use(initReactI18next).init({
         Contacto: "Contact",
 
         // Hero
-        "Soy Esteban Roman": "I'm Daniel Roman",
-        "Desarrollador fullstack con sede en":
-          "Web Fullstack Developer Based In",
-        México: "Mexico",
-        "Construyendo aplicaciones web y móviles con enfoque en calidad, diseño limpio y experiencia de usuario. Explorando principios de arquitectura limpia y desarrollo escalable, estoy listo para colaborar en proyectos innovadores. 🚀":
-          "Building web and mobile applications with a focus on quality, clean design, and user experience. Exploring principles of clean architecture and scalable development, I am ready to collaborate on innovative projects. 🚀",
+        "Daniel Roman": "Daniel Roman",
+        "Desarrollador Web fullstack": "Web Fullstack Developer ",
+        México: "Computer Systems Engineer",
+        TextInHero:
+          "Computer Systems Engineer specializing in high-quality web development with a focus on clean design, seamless user experiences, and scalable architecture. Ready to collaborate on innovative projects that push technological boundaries. 🚀",
+
         "Descargar CV": "Download CV",
 
         // Acerca de mí
@@ -27,6 +27,8 @@ i18n.use(initReactI18next).init({
         Advanced: "Advanced",
         Intermediate: "Intermediate",
         Beginner: "Beginner",
+        Progress: "Progress",
+        Author: "Author",
         UXUIDesign: "UX/UI Design",
         UXUIDescription:
           "Experience in designing intuitive and visually appealing interfaces, using Figma for prototyping and user-centered design.",
@@ -84,12 +86,12 @@ i18n.use(initReactI18next).init({
         Contacto: "Contacto",
 
         // Hero
-        "Soy Esteban Roman": "Soy Daniel Roman",
-        "Desarrollador fullstack con sede en":
-          "Desarrollador Web Fullstack Con Sede En",
-        México: "México",
-        "Construyendo aplicaciones web y móviles con enfoque en calidad, diseño limpio y experiencia de usuario. Explorando principios de arquitectura limpia y desarrollo escalable, estoy listo para colaborar en proyectos innovadores. 🚀":
-          "Construyendo aplicaciones web y móviles con enfoque en calidad, diseño limpio y experiencia de usuario. Explorando principios de arquitectura limpia y desarrollo escalable, estoy listo para colaborar en proyectos innovadores. 🚀",
+        "Daniel Roman": "Daniel Roman",
+        "Desarrollador Web fullstack": "Desarrollador Web fullstack",
+        México: "Ing en Sistemas Computacionales",
+        TextInHero:
+          "Ingeniero en Sistemas Computacionales especializado en desarrollo web de alta calidad, con enfoque en diseño limpio, experiencias fluidas y arquitectura escalable. Listo para colaborar en proyectos innovadores que desafíen los límites tecnológicos. 🚀",
+
         "Descargar CV": "Descargar CV",
 
         // Acerca de mí
@@ -99,6 +101,8 @@ i18n.use(initReactI18next).init({
         Advanced: "Avanzado",
         Intermediate: "Intermedio",
         Beginner: "Principiante",
+        Progress: "Progreso",
+        Author: "Autor",
 
         UXUIDesign: "Diseño de Interfaces (UX/UI)",
         UXUIDescription:

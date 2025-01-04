@@ -1,10 +1,10 @@
 import { useState, useContext, useEffect } from "react";
-import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { BiX, BiMenu } from "react-icons/bi";
 import { ThemeContext } from "../../ThemeContext";
 import { GiNightSky } from "react-icons/gi";
 import { useTranslation } from "react-i18next";
 import { motion, AnimatePresence } from "framer-motion";
+import { BiSun } from "react-icons/bi";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -34,16 +34,20 @@ const Navbar = () => {
           : "border-b-gray-300 bg-white/90 text-black"
       } px-4 md:px-16 py-6 backdrop-blur-md`}
     >
-      {/* Logo */}
       <a
         href="#home"
-        className={`bg-gradient-to-r ${
-          isDarkTheme
-            ? "from-green-400 via-pink-500 to-purple-400"
-            : "from-purple-400 via-pink-500 to-green-400"
-        } bg-clip-text text-transparent text-2xl md:text-4xl font-bold transition-all duration-500 hover:opacity-90 hover:scale-105`}
+        className="flex items-center gap-4 transition-all duration-500 hover:opacity-90 hover:scale-105"
       >
-        Daniel Roman
+        <div className="h-8 w-[2px] bg-gradient-to-b from-green-400 to-purple-400"></div>
+        <span
+          className={`text-3xl font-semibold bg-gradient-to-r ${
+            isDarkTheme
+              ? "from-green-400 via-pink-500 to-purple-400"
+              : "from-purple-400 via-pink-500 to-green-400"
+          } bg-clip-text text-transparent`}
+        >
+          Seira Danny
+        </span>
       </a>
 
       {/* Menú de navegación */}
@@ -178,17 +182,13 @@ const Navbar = () => {
           className={`relative w-14 h-14 flex items-center justify-center rounded-full shadow-lg transition-all duration-500 hover:scale-110 focus:outline-none ${
             isDarkTheme
               ? "bg-black text-yellow-400"
-              : "bg-[#E6E6E6] text-blue-500"
+              : "bg-[#E6E6E6] text-pink-400"
           }`}
         >
           {isDarkTheme ? (
             <GiNightSky className="w-8 h-8" />
           ) : (
-            <img
-              src="/public/day.png"
-              alt="Día"
-              className="w-8 h-8 object-contain"
-            />
+            <BiSun className="w-8 h-8" />
           )}
         </button>
       </div>

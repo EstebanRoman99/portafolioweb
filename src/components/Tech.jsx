@@ -1,5 +1,4 @@
 import {
-  BiLogoAndroid,
   BiLogoApple,
   BiLogoDjango,
   BiLogoDocker,
@@ -13,20 +12,22 @@ import {
   BiLogoTailwindCss,
   BiLogoTypescript,
   BiLogoXing,
-  BiLogoGraphql,
   BiLogoRedux,
   BiLogoFigma,
   BiLogoPython,
 } from "react-icons/bi";
 import { FaLaravel } from "react-icons/fa";
-import { RiNextjsFill } from "react-icons/ri";
-import { SiWebpack, SiAxios } from "react-icons/si";
+import { SiAxios } from "react-icons/si";
 import { TbBrandThreejs } from "react-icons/tb";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";
 import { useTranslation } from "react-i18next";
 import BookCard from "./BookCard";
+import image1 from "../../public/books/cleanCode.jpg";
+import image2 from "../../public/books/pragmaticProgrammer.jpg";
+import image3 from "../../public/books/ingenieria_software.jpg";
+import image4 from "../../public/books/cleanArchitecture.jpg";
 
 const AboutMe = () => {
   const { isDarkTheme } = useContext(ThemeContext);
@@ -70,13 +71,6 @@ const AboutMe = () => {
       level: "60%", // Intermedio
     },
     {
-      name: "Next.js",
-      icon: RiNextjsFill,
-      lightColor: "text-black", // Colores típicos de Next.js
-      darkColor: "text-white",
-      level: "60%", // Intermedio
-    },
-    {
       name: "Python",
       icon: BiLogoPython,
       lightColor: "text-blue-400", // Azul claro para tema claro
@@ -90,6 +84,13 @@ const AboutMe = () => {
       lightColor: "text-blue-400",
       darkColor: "text-blue-500",
       level: "60%", // Intermedio
+    },
+    {
+      name: "Spring Boot",
+      icon: BiLogoSpringBoot,
+      lightColor: "text-green-300",
+      darkColor: "text-green-400",
+      level: "60%", // Básico
     },
     {
       name: "Redux",
@@ -135,13 +136,6 @@ const AboutMe = () => {
       darkColor: "text-orange-500",
       level: "40%", // Principiante alto
     },
-    {
-      name: "GraphQL",
-      icon: BiLogoGraphql,
-      lightColor: "text-pink-400",
-      darkColor: "text-pink-500",
-      level: "40%", // Principiante
-    },
 
     // Herramientas complementarias
     {
@@ -151,13 +145,6 @@ const AboutMe = () => {
       darkColor: "text-blue-600",
       level: "40%", // Principiante
     },
-    {
-      name: "Webpack",
-      icon: SiWebpack,
-      lightColor: "text-blue-400",
-      darkColor: "text-blue-500",
-      level: "30%", // Básico
-    },
 
     // Menor relevancia para frontend
     {
@@ -166,20 +153,6 @@ const AboutMe = () => {
       lightColor: "text-green-400",
       darkColor: "text-green-500",
       level: "30%", // Básico
-    },
-    {
-      name: "Spring Boot",
-      icon: BiLogoSpringBoot,
-      lightColor: "text-green-300",
-      darkColor: "text-green-400",
-      level: "35%", // Básico
-    },
-    {
-      name: "Android",
-      icon: BiLogoAndroid,
-      lightColor: "text-green-400",
-      darkColor: "text-green-500",
-      level: "35%", // Básico
     },
     {
       name: "iOS",
@@ -207,7 +180,7 @@ const AboutMe = () => {
   const books = [
     {
       title: "Codigo Limpio",
-      image: "/public/books/cleanCode.jpg", // Cambia por la ruta de la imagen
+      image: image1,
       description:
         "Escrito por Robert C. Martin, este libro es esencial para escribir código legible y mantenible.",
       progress: "100%",
@@ -218,7 +191,7 @@ const AboutMe = () => {
     },
     {
       title: "El Programador Pragmático",
-      image: "/public/books/pragmaticProgrammer.jpg", // Cambia por la ruta de la imagen
+      image: image2,
       description:
         "Una guía práctica para desarrollar hábitos y técnicas efectivas en el desarrollo de software.",
       progress: "95%",
@@ -229,10 +202,10 @@ const AboutMe = () => {
     },
     {
       title: "Ingeniería de Software: Un Enfoque Práctico",
-      image: "/public/books/ingenieria_software.jpg", // Cambia por la ruta de la imagen
+      image: image3,
       description:
         "Escrito por Roger S. Pressman, este libro es una guía completa sobre los principios y prácticas de la ingeniería de software, desde el diseño hasta el mantenimiento.",
-      progress: "70%", // Cambia según tu avance
+      progress: "70%",
       understanding:
         "Este libro me ha ayudado a entender la importancia de seguir procesos estructurados en el desarrollo de software y cómo aplicar metodologías como Agile para mejorar la eficiencia en proyectos complejos.",
       author: "Roger S. Pressman",
@@ -240,7 +213,7 @@ const AboutMe = () => {
     },
     {
       title: "Arquitectura Limpia",
-      image: "/public/books/cleanArchitecture.jpg", // Cambia por la ruta de la imagen
+      image: image4,
       description:
         "También de Robert C. Martin, este libro explora principios de diseño arquitectónico para aplicaciones escalables y sostenibles.",
       progress: "10%",
@@ -435,9 +408,9 @@ const AboutMe = () => {
         >
           {t("Programming Books")}
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-[1200px] mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-[1200px] mx-auto">
           {books.map((book, index) => (
-            <BookCard key={index} book={book} isDarkTheme={isDarkTheme} />
+            <BookCard key={index} book={book} isDarkTheme={isDarkTheme} t={t} />
           ))}
 
           {/* Espacio para el próximo libro */}

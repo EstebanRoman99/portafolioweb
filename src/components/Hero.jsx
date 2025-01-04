@@ -62,7 +62,7 @@ const Hero = () => {
               : "bg-gradient-to-r from-purple-400 via-pink-500 to-green-400"
           }`}
         >
-          {t("Soy Esteban Roman")}
+          {t("Daniel Roman")}
         </motion.h1>
 
         {/* Rol profesional */}
@@ -76,7 +76,8 @@ const Hero = () => {
             isDarkTheme ? "text-white" : "text-gray-800"
           }`}
         >
-          {t("Desarrollador fullstack con sede en")}{" "}
+          {t("Desarrollador Web fullstack")}
+          {" | "}
           <span
             className={`text-transparent bg-clip-text ${
               isDarkTheme
@@ -99,9 +100,7 @@ const Hero = () => {
             isDarkTheme ? "text-gray-300" : "text-gray-700"
           }`}
         >
-          {t(
-            "Construyendo aplicaciones web y móviles con enfoque en calidad, diseño limpio y experiencia de usuario. Explorando principios de arquitectura limpia y desarrollo escalable, estoy listo para colaborar en proyectos innovadores. 🚀"
-          )}
+          {t("TextInHero")}
         </motion.p>
         <br />
 
@@ -149,8 +148,8 @@ const Hero = () => {
 
           {/* Botón para descargar CV */}
           <motion.a
-            href="/cv/CV_EstebanDanielRomanHernandez.pdf"
-            download="EstebanRoman_CV.pdf"
+            href="/CV_EstebanDanielRomanHernandez-EN.pdf"
+            download="CV_EstebanDanielRomanHernandez-EN.pdf"
             className={`relative px-6 py-3 text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 ${
               isDarkTheme
                 ? "bg-black text-white hover:bg-gray-700"
