@@ -148,7 +148,7 @@ const Hero = () => {
 
           {/* Botón para descargar CV */}
           <motion.a
-            href="/CV_EstebanDanielRomanHernandez-EN.pdf"
+            href="https://drive.google.com/file/d/1wmrU0ZHYk4ayWYSG3LlvoZsa2O0B1Jn_/view?usp=sharing"
             download="CV_EstebanDanielRomanHernandez-EN.pdf"
             className={`relative px-6 py-3 text-lg font-semibold rounded-lg shadow-lg transition-all duration-300 ${
               isDarkTheme
