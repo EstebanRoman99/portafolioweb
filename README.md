@@ -4,7 +4,7 @@
 
 🛠️ Tecnologías Utilizadas
 ⚛️ ReactJS: La base de todo el proyecto, con componentes reutilizables y enrutamiento para una navegación fluida.
-🎨 CSS Animations: Agregando vida y dinamismo al diseño.
+🎨 Tailwind Animations: Agregando vida y dinamismo al diseño.
 🌍 Responsive Design: Diseñado para lucir increíble en cualquier dispositivo, desde móviles hasta pantallas grandes.
 🔗 React Router: Para una experiencia de navegación rápida y sin interrupciones.
 🎯 Características Clave
