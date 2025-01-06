@@ -15,6 +15,7 @@ import {
   BiLogoRedux,
   BiLogoFigma,
   BiLogoPython,
+  BiLogoJava,
 } from "react-icons/bi";
 import { FaLaravel } from "react-icons/fa";
 import { SiAxios } from "react-icons/si";
@@ -84,6 +85,13 @@ const AboutMe = () => {
       lightColor: "text-blue-400",
       darkColor: "text-blue-500",
       level: "60%", // Intermedio
+    },
+    {
+      name: "Java",
+      icon: BiLogoJava,
+      lightColor: "text-red-400",
+      darkColor: "text-red-400",
+      level: "60%", // Básico
     },
     {
       name: "Spring Boot",
@@ -247,16 +255,42 @@ const AboutMe = () => {
       </motion.h1>
 
       {/* Descripción */}
-      <motion.p
-        className={`text-center text-lg md:text-xl ${
-          isDarkTheme ? "text-gray-300" : "text-gray-700"
-        } max-w-[800px] mx-auto mb-12`}
+      <motion.div
+        className="text-center text-lg md:text-xl max-w-[800px] mx-auto mb-12"
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {t("Acerca de mí Descripción")}
-      </motion.p>
+        <p
+          className={`mb-6 ${isDarkTheme ? "text-gray-300" : "text-gray-700"}`}
+        >
+          {t("Acerca de mí Descripción")}
+        </p>
+
+        <p
+          className={`mb-4 font-semibold ${
+            isDarkTheme ? "text-white" : "text-black"
+          }`}
+        >
+          {t("Here are some of the technologies I have worked with:")}
+        </p>
+
+        {/* Flecha hacia abajo */}
+        <motion.div
+          className={`text-4xl ${
+            isDarkTheme ? "text-green-400" : "text-pink-500"
+          }`}
+          initial={{ y: 0 }}
+          animate={{ y: [0, 10, 0] }}
+          transition={{
+            duration: 1,
+            repeat: Infinity,
+            repeatType: "loop",
+          }}
+        >
+          ↓
+        </motion.div>
+      </motion.div>
 
       {/* Contenedor de tecnologías */}
       <div className="flex flex-wrap justify-center gap-10">

@@ -1,4 +1,4 @@
-import image from "/public/emagen.jpg";
+import image from "../../public/emagen.jpg";
 import { motion } from "framer-motion";
 import { useContext } from "react";
 import { ThemeContext } from "../../ThemeContext";

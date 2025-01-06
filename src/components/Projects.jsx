@@ -1,10 +1,11 @@
 import { useEffect, useState, useContext } from "react";
 import { motion } from "framer-motion";
 import { ThemeContext } from "../../ThemeContext";
-import image1 from "/public/projects/oficinaVinculacion.png";
-import image2 from "/public/projects/huxGym.png";
-import image3 from "/public/3.png";
-import image4 from "/public/4.png";
+import image1 from "../../public/projects/oficinaVinculacion.png";
+import image2 from "../../public/projects/huxGym.png";
+import image3 from "../../public/3.png";
+import image4 from "../../public/4.png";
+import appnotesimage from "/public/projects/appnotes.png";
 import { FaLaptopCode, FaMobileAlt, FaServer } from "react-icons/fa";
 import {
   BiLogoAndroid,
@@ -202,6 +203,7 @@ const projectsData = {
         "Alpine.js",
       ],
       github: "https://github.com/EstebanRoman99/oficinaVinculacion-Django",
+      live: "none",
     },
     {
       image: image2,
@@ -219,6 +221,7 @@ const projectsData = {
         "Axios",
       ],
       github: "https://github.com/EstebanRoman99/HuxGym-React",
+      live: "none",
     },
     {
       image: image3,
@@ -239,6 +242,27 @@ const projectsData = {
       ],
       github:
         "https://github.com/EstebanRoman99/neumarket-laravel/tree/main/sistema-master",
+      live: "none",
+    },
+    {
+      image: appnotesimage,
+      title: "Aplicación de Notas Web",
+      description:
+        "Aplicación web para la gestión de notas y categorías con autenticación de usuarios.",
+      extendedDescription:
+        "Esta aplicación fue desarrollada para permitir al usuario crear, editar y gestionar notas con categorías asociadas. Cuenta con una interfaz moderna y responsiva construida con tecnologías web actuales. La funcionalidad incluye registro de usuarios, autenticación, filtrado por categorías y paginación de notas. Además, se implementó un backend seguro para garantizar la integridad de los datos de los usuarios.",
+      technologies: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Spring Boot",
+        "PostgreSQL",
+        "Java",
+        "TailwindCSS",
+        "SpringBoot",
+      ],
+      github: "https://github.com/EstebanRoman99/appnotes",
+      live: "https://appnotes-icqw.vercel.app/login",
     },
   ],
   mobile: [],
@@ -250,6 +274,7 @@ const projectsData = {
       extendedDescription:
         "Un servicio backend para manejar usuarios, utilizando Node.js, Express y MongoDB.",
       technologies: ["Node.js", "Express", "MongoDB"],
+      live: "none",
     },
   ],
 };
@@ -335,20 +360,42 @@ const Modal = ({ project, onClose, isDarkTheme }) => (
             })}
           </div>
 
-          {/* Botón GitHub */}
-          <a
-            href={project.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            a
-            className={`inline-block px-6 py-3 mt-auto rounded-lg font-semibold text-center transition-all duration-300 shadow-lg ${
-              isDarkTheme
-                ? "bg-green-500 text-white hover:bg-green-600"
-                : "bg-pink-300 text-black hover:bg-pink-400"
-            }`}
+          {/* Botones */}
+          <div
+            className={`flex ${
+              project.live !== "none" ? "justify-between" : "justify-center"
+            } gap-4`}
           >
-            View on GitHub
-          </a>
+            {/* Botón GitHub */}
+            <a
+              href={project.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex-1 px-6 py-3 rounded-lg font-semibold text-center transition-all duration-300 shadow-lg ${
+                isDarkTheme
+                  ? "bg-green-500 text-white hover:bg-green-600"
+                  : "bg-pink-300 text-black hover:bg-pink-400"
+              }`}
+            >
+              View on GitHub
+            </a>
+
+            {/* Botón Live */}
+            {project.live !== "none" && (
+              <a
+                href={project.live}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`flex-1 px-6 py-3 rounded-lg font-semibold text-center transition-all duration-300 shadow-lg ${
+                  isDarkTheme
+                    ? "bg-pink-500 text-white hover:bg-pink-600"
+                    : "bg-green-300 text-black hover:bg-green-400"
+                }`}
+              >
+                View Live
+              </a>
+            )}
+          </div>
         </div>
       </div>
     </div>

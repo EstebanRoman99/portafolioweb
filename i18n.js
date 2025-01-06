@@ -22,7 +22,10 @@ i18n.use(initReactI18next).init({
 
         // Acerca de mí
         "Acerca de mí Descripción":
-          "I am a frontend developer in Mexico 🌐, passionate about creating dynamic and functional experiences. Every day, I learn something new while tackling challenges with creativity and determination. I'm improving my English to expand my horizons and collaborate on international projects. By the way, if you find a line of code with 'fix later' or a console.log, it's probably me leaving messages for the future. 😅 The sky is just the beginning! 🚀",
+          "I am a Fullstack Web Developer and Computer Systems Engineer from Mexico, passionate about creating high-quality digital solutions with a focus on clean design, seamless user experiences, and scalable architectures. I am improving my English to collaborate on international projects and tackle new technological challenges. Together, we can take technology further! 🚀",
+
+        "Here are some of the technologies I have worked with:":
+          "Here are some of the technologies I have worked with:",
 
         Advanced: "Advanced",
         Intermediate: "Intermediate",
@@ -96,7 +99,10 @@ i18n.use(initReactI18next).init({
 
         // Acerca de mí
         "Acerca de mí Descripción":
-          "Soy un desarrollador frontend en México 🌐, apasionado por crear experiencias dinámicas y funcionales. Cada día aprendo algo nuevo mientras enfrento retos con creatividad y determinación. Estoy mejorando mi inglés para expandir mis horizontes y colaborar en proyectos internacionales. Por cierto, si encuentras una línea de código con 'arreglar después' o un console.log probablemente fui yo dejando mensajes al futuro. 😅 ¡El cielo es solo el comienzo! 🚀",
+          "Soy un desarrollador web Fullstack y un ingeniero en sistemas computacionales de México, apasionado por crear soluciones digitales de alta calidad con un enfoque en diseño limpio, experiencias de usuario fluidas y arquitecturas escalables. Estoy mejorando mi inglés para colaborar en proyectos internacionales y enfrentar nuevos retos tecnológicos. ¡Juntos podemos llevar la tecnología más lejos! 🚀",
+
+        "Here are some of the technologies I have worked with:":
+          "Estas son algunas de las tecnologías con las que he trabajado:",
 
         Advanced: "Avanzado",
         Intermediate: "Intermedio",

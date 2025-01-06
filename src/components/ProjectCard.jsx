@@ -1,12 +1,5 @@
-import { useState, useContext } from "react";
 import { motion } from "framer-motion";
-import { ThemeContext } from "../../ThemeContext";
-import image1 from "/public/1.png";
-import image2 from "/public/2.png";
-import image3 from "/public/3.png";
-import image4 from "/public/4.png";
-import image5 from "/public/5.png";
-import { FaLaptopCode, FaMobileAlt, FaServer } from "react-icons/fa";
+
 import {
   BiLogoAndroid,
   BiLogoApple,
@@ -25,7 +18,6 @@ import {
   BiLogoHtml5,
   BiLogoJava,
 } from "react-icons/bi";
-import { useTranslation } from "react-i18next";
 
 const technologyIcons = {
   JavaScript: {
@@ -115,61 +107,6 @@ const technologyIcons = {
   },
 };
 
-const projectsData = {
-  web: [
-    {
-      image: imageSistemaVinculacion,
-      title: "Sistema Web Oficina de Vinculación",
-      description:
-        "Sistema web para la gestión de proyectos del departamento de Sistemas y Computación.",
-      extendedDescription:
-        "Este sistema fue desarrollado para centralizar y facilitar la gestión de proyectos de vinculación académica y profesional del departamento de Sistemas y Computación. Utiliza tecnologías modernas para ofrecer un entorno eficiente y funcional, incluyendo una interfaz intuitiva y herramientas que mejoran la productividad. El proyecto integra características como registro de proyectos, administración de usuarios y reportes automáticos.",
-      technologies: ["Django", "Python", "JavaScript", "SQL"],
-      github: "https://github.com/tuusuario/SistemaWebOficinaVinculacion",
-    },
-    {
-      image: image2,
-      title: "Web Project 2",
-      description: "Aplicación web para seguimiento de tareas.",
-      extendedDescription:
-        "Un sistema completo de gestión de tareas con autenticación y CRUD.",
-      technologies: ["CSS", "JavaScript", "JavaScript"],
-      github: "https://github.com/tuusuario/web-project-2",
-    },
-  ],
-  mobile: [
-    {
-      image: image3,
-      title: "Mobile Project 1",
-      description: "Aplicación móvil para Android.",
-      extendedDescription:
-        "Aplicación nativa para Android que utiliza Kotlin y Firebase para autenticación y almacenamiento.",
-      technologies: ["Kotlin", "Firebase"],
-      github: "https://github.com/tuusuario/mobile-project-1",
-    },
-    {
-      image: image4,
-      title: "Mobile Project 2",
-      description: "Aplicación para iOS con Swift.",
-      extendedDescription:
-        "Aplicación iOS diseñada con interfaces modernas usando Swift y Core Data.",
-      technologies: ["Swift", "Core Data"],
-      github: "https://github.com/tuusuario/mobile-project-2",
-    },
-  ],
-  others: [
-    {
-      image: image5,
-      title: "API Project",
-      description: "API RESTful para gestión de usuarios.",
-      extendedDescription:
-        "Un servicio backend para manejar usuarios, utilizando Node.js, Express y MongoDB.",
-      technologies: ["Node.js", "Express", "MongoDB"],
-      github: "https://github.com/tuusuario/api-project",
-    },
-  ],
-};
-
 const Modal = ({ project, onClose, isDarkTheme }) => (
   <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75 z-50">
     <div
@@ -236,7 +173,6 @@ const Modal = ({ project, onClose, isDarkTheme }) => (
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            a
             className={`inline-block px-6 py-3 mt-auto rounded-lg font-semibold text-center transition-all duration-300 shadow-lg ${
               isDarkTheme
                 ? "bg-green-500 text-white hover:bg-green-600"
