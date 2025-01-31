@@ -274,22 +274,6 @@ const AboutMe = () => {
         >
           {t("Here are some of the technologies I have worked with:")}
         </p>
-
-        {/* Flecha hacia abajo */}
-        <motion.div
-          className={`text-4xl ${
-            isDarkTheme ? "text-green-400" : "text-pink-500"
-          }`}
-          initial={{ y: 0 }}
-          animate={{ y: [0, 10, 0] }}
-          transition={{
-            duration: 1,
-            repeat: Infinity,
-            repeatType: "loop",
-          }}
-        >
-          ↓
-        </motion.div>
       </motion.div>
 
       {/* Contenedor de tecnologías */}
@@ -442,6 +426,46 @@ const AboutMe = () => {
         >
           {t("Programming Books")}
         </h2>
+        {/* Descripción de la sección de libros */}
+        <motion.div
+          className="text-center text-lg md:text-xl max-w-[800px] mx-auto mb-12"
+          initial={{ opacity: 0, y: 50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+        >
+          <blockquote
+            className={`italic mb-4 ${
+              isDarkTheme ? "text-gray-300" : "text-gray-700"
+            }`}
+          >
+            {t("Hacia las estrellas a través de las dificultades.")}
+          </blockquote>
+
+          <p
+            className={`text-center font-semibold mb-2 ${
+              isDarkTheme ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
+            {t("Ad astra per aspera")}
+          </p>
+
+          <p
+            className={`text-right font-semibold ${
+              isDarkTheme ? "text-white" : "text-black"
+            }`}
+          >
+            — {t("Séneca")}
+          </p>
+
+          <p
+            className={`mt-6 ${
+              isDarkTheme ? "text-gray-300" : "text-gray-700"
+            }`}
+          >
+            {t("textInBooksDescription")}
+          </p>
+        </motion.div>
+
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 max-w-[1200px] mx-auto">
           {books.map((book, index) => (
             <BookCard key={index} book={book} isDarkTheme={isDarkTheme} t={t} />

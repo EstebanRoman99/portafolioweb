@@ -59,7 +59,11 @@ i18n.use(initReactI18next).init({
         "Habilidad para aprender nuevas tecnologías y herramientas de forma autónoma, manteniéndome actualizado con las tendencias del sector.":
           "Ability to learn new technologies and tools autonomously, staying updated with industry trends.",
 
-        "Programming Books": "Programming Books",
+        "Programming Books": "My Learning Journey",
+        "Hacia las estrellas a través de las dificultades.":
+          "Through hardships to the stars.",
+        textInBooksDescription:
+          "Learning is a continuous journey. Each book represents another step in my path as a developer, facing challenges and acquiring new skills.",
 
         "Next Book": "Next Book",
         "Looking for the next book to improve my skills. More learnings to come!":
@@ -137,7 +141,11 @@ i18n.use(initReactI18next).init({
         "Aprendizaje autodidacta": "Aprendizaje autodidacta",
         "Habilidad para aprender nuevas tecnologías y herramientas de forma autónoma, manteniéndome actualizado con las tendencias del sector.":
           "Habilidad para aprender nuevas tecnologías y herramientas de forma autónoma, manteniéndome actualizado con las tendencias del sector.",
-        "Programming Books": "Libros de programación",
+        "Programming Books": "Mi viaje de aprendizaje",
+        "Hacia las estrellas a través de las dificultades.":
+          "Hacia las estrellas a través de las dificultades.",
+        textInBooksDescription:
+          "El aprendizaje es un viaje constante. Cada libro representa un paso más en mi camino como desarrollador, enfrentando desafíos y adquiriendo nuevas habilidades.",
 
         "Next Book": "¿Próximo libro?",
         "Looking for the next book to improve my skills. More learnings to come!":

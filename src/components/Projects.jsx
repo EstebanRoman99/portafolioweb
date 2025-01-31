@@ -229,7 +229,7 @@ const projectsData = {
       description:
         "Sistema para la gestión eficiente de inventarios en tiempo real.",
       extendedDescription:
-        "El Sistema de Inventarios Neumarket fue desarrollado para optimizar la gestión de inventarios en negocios medianos y grandes. La plataforma permite controlar el stock, gestionar entradas y salidas de productos, y generar reportes detallados en tiempo real. Diseñado con un enfoque en la usabilidad, utiliza Laravel como framework principal para el backend, combinado con TailwindCSS para un diseño moderno y responsivo. Además, incluye herramientas avanzadas para análisis de datos y soporte multiusuario, con niveles de permisos personalizables. Figma se utilizó para diseñar la interfaz, y el sistema está respaldado por SQL para la gestión de datos.",
+        "El Sistema de Inventarios Neumarket optimiza la gestión de inventarios en negocios medianos y grandes. Permite controlar stock, gestionar productos y generar reportes en tiempo real. Desarrollado con Laravel y TailwindCSS, ofrece una interfaz moderna, análisis de datos y soporte multiusuario con permisos personalizables. La interfaz fue diseñada en Figma y el sistema usa SQL para gestionar datos.",
       technologies: [
         "Laravel",
         "PHP",

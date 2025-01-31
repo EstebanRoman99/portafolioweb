@@ -16,7 +16,7 @@ const SplashScreen = () => {
           ease: "easeInOut",
         }}
         style={{
-          color: "#FF69B4", // Hot Pink, un rosita más coqueto
+          color: "#FF69B4",
         }}
       >
         <GiSnakeEgg />
@@ -29,7 +29,7 @@ const SplashScreen = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 1, ease: "easeOut" }}
       >
-        Welcome to Seira Danny's Portfolio
+        Welcome to Seira Danny&apos;s Portfolio
       </motion.h1>
     </div>
   );
